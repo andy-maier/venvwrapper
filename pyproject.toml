@@ -1,0 +1,55 @@
+# pyproject.toml file for venvwrapper
+# Documentation:
+# pyproject.toml: https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
+# setuptools items: https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+
+[build-system]
+requires = [
+    # Must be consistent with requirements-develop.txt
+    "setuptools>=70.0.0",
+    "wheel>=0.41.3"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "venvwrapper"
+description = "Wrapper script for Python's venv"
+
+# Package version, modified by bumpversion
+version = "0.5.0"
+
+requires-python = ">=3.8"
+dependencies = []
+
+authors = [
+    {name = "Andreas Maier", email = "andreas.r.maier@gmx.de"}
+]
+maintainers = [
+    {name = "Andreas Maier", email = "andreas.r.maier@gmx.de"}
+]
+readme = "README.md"
+license = {text = "Apache License, Version 2.0"}
+keywords = ["venv", "virtualenv", "virtualenvwrapper"]
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Environment :: Console",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+[tool.setuptools]
+script-files = ["venvwrapper.sh"]
+
+[project.urls]
+Homepage = "https://github.com/andy-maier/venvwrapper"
+"Bug Tracker" = "https://github.com/andy-maier/venvwrapper/issues"
+"Source Code" = "https://github.com/andy-maier/venvwrapper"
