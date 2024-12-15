@@ -2,13 +2,15 @@
 
 ## Setting up a development environment
 
-* Set up a virtual Python environment using Python 3.8 or higher:
+* Set up a virtual Python environment
 
-  For example, by using venvwrapper itself:
+  Check `pyproject.toml` for supported Python versions.
+
+  You can use venvwrapper itself for creating the virtual environment:
 
   ```
   pip3 install --break-system-packages venvwrapper
-  mkvenv venv38 python3.8
+  mkvenv venv313 python3.13
   ```
 
 * Clone this repository
