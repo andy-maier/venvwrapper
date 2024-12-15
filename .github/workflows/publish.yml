@@ -11,6 +11,9 @@ on:
     - "*"
     - "!*a0"  # Exclude initial tag for a new version
 
+permissions:
+  id-token: write
+
 jobs:
   publish:
     name: Build and publish to PyPI
