@@ -33,6 +33,13 @@ the BDFL on the topic:
 I use venv (in the stdlib) and a bunch of shell aliases to quickly switch.
 ```
 
+## Supported shells
+
+At this point, venvwrapper supports bash and zsh. More shells may work, but
+not with tab completion.
+
+Contributions to add support for more shells are welcome!
+
 ## Installation
 
 * Install the venvwrapper Python package into your default system Python 3 (i.e.
@@ -59,7 +66,7 @@ I use venv (in the stdlib) and a bunch of shell aliases to quickly switch.
   `~/.zshrc`) in a place where no Python virtual environment is active:
 
   ```
-  # VENV_HOME=path-to-venvs
+  VENV_HOME=$HOME/.virtualenvs
   venv_wrapper=$(which venvwrapper.sh)
   if [[ -n $venv_wrapper ]]; then
       source $venv_wrapper
@@ -92,9 +99,6 @@ I use venv (in the stdlib) and a bunch of shell aliases to quickly switch.
 
 ## Usage
 
-An active virtual environment is indicated by an `(env)` prefix in the command
-prompt. That is the normal behavior of venv.
-
 All commands provided by venvwrapper explain their usage when called with `-h`
 or `--help`:
 
@@ -103,8 +107,13 @@ or `--help`:
 * `rmvenv` - remove one or more virtual environments
 * `lsvenv` - list existing virtual environments
 
+The `venv` and `rmvenv` commands support tab completion.
+
 The standard `deactivate` script provided by the virtual environment is used
-to deactivate the virtual environment.
+to deactivate the current virtual environment.
+
+An active virtual environment is indicated by an `(env)` prefix in the command
+prompt. That is the normal behavior of venv.
 
 The commands provided by venvwrapper are actually shell functions, so they
 cannot be used in other scripts. If you need to activate virtual environments
@@ -117,16 +126,14 @@ existing virtual environments can be used on either kind of virtual environment,
 regardless of which package created it. For example, `lsvenv` will list both
 kinds of virtual environments.
 
-The `venv` and `rmvenv` commands support tab completion.
+## Development and contributions
+
+The venvwrapper project welcomes contributions.
+
+For how to set up a development environment, see [DEVELOP.md](DEVELOP.md).
 
 ## References
 
 The venvwrapper.sh script provided in this package is based on the script
 by Ismail Demirbilek at
 https://gist.github.com/dbtek/fb2ddccb18f0cf63a654ea2cc94c8f19.
-
-## Development and contributions
-
-The venvwrapper project welcomes contributions.
-
-For how to set up a development environment, see [DEVELOP.md](DEVELOP.md).
