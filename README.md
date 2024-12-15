@@ -66,7 +66,7 @@ Contributions to add support for more shells are welcome!
   `~/.zshrc`) in a place where no Python virtual environment is active:
 
   ```
-  VENV_HOME=$HOME/.virtualenvs
+  # VENV_HOME=$HOME/.venv
   venv_wrapper=$(which venvwrapper.sh)
   if [[ -n $venv_wrapper ]]; then
       source $venv_wrapper
@@ -74,7 +74,7 @@ Contributions to add support for more shells are welcome!
   ```
 
   `VENV_HOME` specifies the directory under which the directories for the
-  virtual environments are created. If not set, it defaults to `~/.venv`.
+  virtual environments are created. If not set, it defaults to `$HOME/.venv`.
 
   `VENV_HOME` can be set to the same directory that is used for
   virtualenvwrapper (i.e. its `WORKON_HOME` directory).
