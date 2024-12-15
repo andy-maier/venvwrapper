@@ -79,8 +79,14 @@ To release a version of this package to Pypi, follow these steps:
     * publishes the new version on Pypi
     * creates a release on the Github repository
 
-7.  Wait for the "publish" workflow to complete and check for success
+7.  Close the milestone for the version that is released
 
-8.  Verify that the new version is on Pypi
+    https://github.com/andy-maier/venvwrapper/milestones
+
+8.  Wait for the "publish" workflow to complete and check for success
+
+    https://github.com/andy-maier/venvwrapper/actions/workflows/publish.yml
+
+9.  Verify that the new version is on Pypi
 
     https://pypi.org/project/venvwrapper/
