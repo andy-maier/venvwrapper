@@ -16,7 +16,7 @@ name = "venvwrapper"
 description = "Wrapper script for Python's venv"
 
 # Package version, modified by bumpversion
-version = "0.5.0"
+version = "0.6.0"
 
 # Supported Python versions
 requires-python = ">=3.5"
