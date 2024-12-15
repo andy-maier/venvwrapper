@@ -50,6 +50,5 @@ classifiers = [
 script-files = ["venvwrapper.sh"]
 
 [project.urls]
-Homepage = "https://github.com/andy-maier/venvwrapper"
-"Bug Tracker" = "https://github.com/andy-maier/venvwrapper/issues"
 "Source Code" = "https://github.com/andy-maier/venvwrapper"
+"Bug Tracker" = "https://github.com/andy-maier/venvwrapper/issues"
