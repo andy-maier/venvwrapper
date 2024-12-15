@@ -38,7 +38,7 @@ endif
 package_name := venvwrapper
 
 # Package version, modified by bumpversion
-package_version := 0.5.0
+package_version := 0.6.0
 
 python_mn_version := $(shell $(PYTHON_CMD) -c "import sys; sys.stdout.write('{}.{}'.format(sys.version_info[0], sys.version_info[1]))")
 pymn := $(shell $(PYTHON_CMD) -c "import sys; sys.stdout.write('py{}{}'.format(sys.version_info[0], sys.version_info[1]))")
