@@ -69,7 +69,7 @@ To release a version of this package to Pypi, follow these steps:
     git pull
     git branch -D $branch
     git branch -D -r origin/$branch
-    version=$(grep current_version .bumpversion.cfg | cut -d '=' -f 2 | sed -e 's/ //g')
+    version=$(grep -E "current_version +=" .bumpversion.cfg | cut -d '=' -f 2 | sed -e 's/ //g')
     git tag $version
     git push --tags
     ```
