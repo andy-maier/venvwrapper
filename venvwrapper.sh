@@ -3,8 +3,8 @@
 # the standard library of Python 3.
 # Based on https://gist.github.com/dbtek/fb2ddccb18f0cf63a654ea2cc94c8f19.
 #
-# Setup in .bashrc / .bash_profile / .zshrc:
-#   VENV_HOME=path-to-venvs   # Can be same path as for virtualenvwrapper
+# Setup in ~/.bashrc or ~/.zshrc:
+#   export VENV_HOME=path-to-venvs   # Can be same path as for virtualenvwrapper
 #   source $(which venvwrapper.sh)
 #
 # Usage:
