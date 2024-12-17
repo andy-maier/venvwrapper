@@ -62,15 +62,12 @@ Contributions to add support for more shells are welcome!
   /opt/homebrew/bin/venvwrapper.sh
   ```
 
-* Add the following to your shell startup script (e.g. `~/.bash_profile` or
+* Add the following to your shell startup script (e.g. `~/.bashrc` or
   `~/.zshrc`) in a place where no Python virtual environment is active:
 
   ```
-  # VENV_HOME=$HOME/.venv
-  venv_wrapper=$(which venvwrapper.sh)
-  if [[ -n $venv_wrapper ]]; then
-      source $venv_wrapper
-  fi
+  # export VENV_HOME=$HOME/.venv
+  source $(which venvwrapper.sh)
   ```
 
   `VENV_HOME` specifies the directory under which the directories for the
